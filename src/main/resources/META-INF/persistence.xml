@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="objectdb-demo">
+        <provider>com.objectdb.jpa.Provider</provider>
+        <properties>
+            <!-- Ruta a la base de datos. Si no existe, se crea automáticamente -->
+            <property name="jakarta.persistence.jdbc.url" value="objectdb:alumnos.odb"/>
+        </properties>
+    </persistence-unit>
+</persistence>
